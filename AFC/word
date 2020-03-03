@@ -1,0 +1,16 @@
+I wrote a program to help me generate contraction code.
+It convert the latex source code into c source code.
+I will write a cuda version in few days.
+
+Now let me show you.
+
+
+source code:
+	convert_split.c --> convert latex code into c source code line by line
+	readline.c ==> read file from disk into memory
+	test.c --> the main program
+	test.tex --> the example input of latex code
+
+We can add these code into our program.
+
+
