@@ -1,0 +1,223 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{CODES' NOTE}
+
+\maketitle
+
+FUCKING CODER
+
+\section{SHELL }
+
+\subsection{Basic Function}
+
+\
+
+The Function of SHELL:
+
+Interpret the user's input and excute these commands.
+
+\
+
+Shell do three things in its {\bfseries{LifeTime:}}
+\begin{itemize}
+  \item Initialize
+  
+  \item Interpret
+  
+  \item Terminate
+\end{itemize}
+
+
+\
+
+The functions of shell can be divided into three parts:
+\begin{itemize}
+  \item Read Command
+  
+  \item Understand Command
+  
+  \item Excute Command
+\end{itemize}
+
+
+{\bfseries{Read Command:}}
+
+Generally, Shell read in a string and store it into an array.
+
+{\bfseries{step1.}} To read in Command, we need \ {\bfseries{getchar()}}
+function.
+
+\ \ \ \ \ \ \ \ \ \ {\bfseries{getchar()}} function read in one single char
+each time. So we need a loop to make it.
+
+{\bfseries{step2.}} We need to decide when to finish reading.
+
+\ \ \ \ \ \ \ \ \ \ Typically when we accept an {\bfseries{Enter}} or
+{\bfseries{EOF}}, we need to stop reading in.
+
+\ \ \ \ \ \ \ \ \ \ \ {\bfseries{EOF:}} end of file. value is $- 1$.
+
+\
+
+{\bfseries{Understand Command:}}
+
+It means that we need to extract information from strings. Typically, we need
+to know what program is required, what arguments it has. To simplify our
+program, we understand the input as
+
+{\bfseries{Programm+argumenmts.}}
+
+It means that the first char should be the name of the program we want to
+call. The left chars are these required arguments.
+
+These commands and arguments should be divided by space, tab($\backslash
+t${\bfseries{}}),return(r),newline(n),vertical tab(v).
+
+Namely we have
+
+{\bfseries{step1.}} split string according to there characters. we use
+{\bfseries{strtok}} function to split string. And we also need a loop to
+iteratively split the string.
+
+{\bfseries{step2.}} store there char into array.
+
+\
+
+{\bfseries{Excuted Commands:}}
+
+\
+
+\section{My First Own Project: {\bfseries{Assistant}}}
+
+\
+
+{\bfseries{The advantage of this CODE:}}
+\begin{itemize}
+  \item If your code is correct, you don't have to check your code every time;
+  
+  \item It would work for different work;
+  
+  \item It would work for different operators, you don't have to wirte code
+  explicitely for each operator. Namely, if you want you can easily generate
+  the code that calculate 12 different kinds of \ operators. 
+\end{itemize}
+It's function would include
+\begin{itemize}
+  \item code generation (c);
+  
+  \item File management, including encryption, sorting, searching ... and
+  writting assistant;
+  
+  \item Reminder;
+  
+  \item Help derivation;
+  
+  \item Automatic web searching, sorting, saving, analyzing...
+\end{itemize}
+
+
+This project would be a highly personalize and it will be an assisant of
+myself.
+
+\subsection{Assistant for Contraction}
+
+
+\begin{eqnarray*}
+  C (t) & = & \Phi_{\alpha \beta}^{B a b} (t') \tau_{\beta \gamma}^{b c} (t',
+  t) \Phi_{\gamma \kappa}^{A c d} (t) \tau_{\kappa \alpha}^{d a} (t, t')
+\end{eqnarray*}
+Conver this line (latex source code) to
+
+{\bfseries{Pseudo code:}}
+
+for a,b,c,d
+
+for $\alpha, \beta, \gamma, \kappa$
+
+for($t'$)
+
+$\begin{array}{lll}
+  C (t) & = & \Phi_{\alpha \beta}^{B a b} (t') \ast \tau_{\beta \gamma}^{b c}
+  (t', t) \ast \Phi_{\gamma \kappa}^{A c d} (t) \ast \tau_{\kappa \alpha}^{d
+  a} (t, t')
+\end{array}$
+
+$\Rightarrow$
+
+corr[0][t\_src][t]+=vector\_products[0][t\_snk][c1][c2]*gamma[s1][s2]*peram[t\_src][t][s2][s3][c2][c3]*conj(vector\_products[0][t\_src][c4][c3])*gamma[s3][s4]*peram\_back[t\_src][t][s4][s1][c4][c1];
+
+\
+
+\
+
+{\bfseries{Convert function:}}
+\begin{itemize}
+  \item {\bfseries{Step1.}}split line according to *, and $=$ ;
+  
+  \item {\bfseries{Step2}}.split token according to bracket ']' and '[';
+  
+  \item {\bfseries{Step3.}}split these string in $[\ldots]$ according to
+  $','$and interpret it as index ;
+  
+  \item {\bfseries{Step4.}}Determine repeated indexes;
+  
+  \item {\bfseries{Step5.}}Write a {\bfseries{for}} loop for each repeated
+  index.
+\end{itemize}
+{\bfseries{Qusetions:}}
+\begin{itemize}
+  \item {\bfseries{Q1.}}Firstly, How to determine which index is repeated;
+  
+  \item {\bfseries{Q2.}} How to combine these variables with corresponding
+  indexes.
+  
+  \item {\bfseries{Q3.}} How to deal with these indexes that repreated but
+  doesn't need loop over ?
+  
+  \item {\bfseries{Q4.}} How to deal with these operators 
+\end{itemize}
+{\bfseries{Solutions:}}
+\begin{itemize}
+  \item {\bfseries{S1}}. \ We should write a simple function to search
+  repeated indexes;
+  
+  \item {\bfseries{S2.}} \ We should sotore variables and correspondings as
+  $\ensuremath{\operatorname{var}} [i] [j]$. $\ensuremath{\operatorname{var}}
+  [i] [0]$ stores the variable name, $\ensuremath{\operatorname{var}} [i] [1 -
+  n]$ store the indexes of i-th variable;
+  
+  \item {\bfseries{S3.}} \ \ $\Phi$ has only one time index while $\tau$ has
+  two time indexes. But we don't have to repeated with these time indexes, so
+  we don't have to deal with it. $\Phi$ looks like $\Phi [p, t, \ldots]$,
+  $\tau$ looks like $\tau [t, t', \ldots]$ So we just only need to left first
+  two indexes unchanged.
+  
+  \item {\bfseries{S4.}} For simplicity, we don't deal with bracket operaters
+  seperately. Our input only include operators like $+, -, =, \ast \cdot$
+  These operaters should be intepreted in a sequence. Firstly, the $' ='$.
+  Secondly, $' +'$ and $' -'$. Finally, the $' \ast'$. In this way, we can
+  know what operator is intepreting. To not forget any operator, we should
+  store operators with correspoinding variables. For example, $a = b + c$. We
+  should interpret it as $a$, $= b$, $+ c$. Genearlly, for a expression like
+  $a = b \ast f + c - g$ \ \
+  \begin{itemize}
+    \item {\bfseries{Step1.}} Interpret it as $a$, $= b \ast f$, $+ c$, $- g$;
+    
+    \item {\bfseries{Step2.}} Interpret $= b \ast f$ as $= b$, $\ast f$;
+    
+    \item {\bfseries{Step3.}} combine $a, = b, \ast f, + c, - g$ to be c code;
+    $a = b \ast f + c - g$. We only need to just combine these operators.
+    
+    \item {\bfseries{Step4.}} Usually, an variable would have several indexes
+    so we need to interpret these indexes. For example, $a [t, t', \alpha,
+    \beta, a, b]$ should be interpret as $a [t] [t'] [\alpha] [\beta] [a]
+    [b]$. It should be split by $[ $ and $','$.
+  \end{itemize}
+\end{itemize}
+
+
+\end{document}
