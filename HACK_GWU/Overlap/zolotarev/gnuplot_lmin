@@ -1,0 +1,11 @@
+set term eps
+set logscale x 2
+set output "lmin.eps"
+set title "delta(lmin)"
+set xlabel "lmin"
+set ylabel "delta"
+#set yrange [-0.01:0.06]
+#set xrange [ e-10:0.2 ]
+set xtic 5
+set mxtic 5
+plot "plot_1" using 1:2 title "vary lmin",\

@@ -1,0 +1,10 @@
+set term eps
+set output "sign.eps"
+set title "sign function"
+set xlabel "y"
+set ylabel "y/sqrt(y^2)"
+set xrange [-1:1]
+set yrange [-1.5:1.5]
+set xtic 5
+set mxtic 5
+plot "plot_3" using 1:2:3 with yerrorbars title "yR(y)" ,\

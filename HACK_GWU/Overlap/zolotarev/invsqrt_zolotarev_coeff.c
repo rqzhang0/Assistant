@@ -3,7 +3,7 @@
 #include <math.h>
 #include "zolotarev.h"
 
-static double compute_delta(double lmin, double lmax, int n)
+double compute_delta(double lmin, double lmax, int n)
 {
   double eps = pow(lmin/lmax, 2);
   double k = sqrt(1-eps);
@@ -17,7 +17,7 @@ static double compute_delta(double lmin, double lmax, int n)
   {
     double sn, cn, dn;
     sncndn(r*v, rk, &sn, &cn, &dn);
-    printf("n=%d r=%d r*v=%e rk=%e sn=%e cn=%e dn=%e \n",n,r,r*v,rk,sn,cn,dn);
+    //printf("n=%d r=%d r*v=%e rk=%e sn=%e cn=%e dn=%e \n",n,r,r*v,rk,sn,cn,dn);
     d *= pow(sn, 4);
   }
   //d *= pow(k, 2*n);
@@ -28,7 +28,7 @@ static double compute_delta(double lmin, double lmax, int n)
   return delta;
 }
 
-static double compute_coef(double lmin, double lmax, int n, double* q, double *cc)
+double compute_coef(double lmin, double lmax, int n, double* q, double *cc)
 {
   double eps = pow(lmin/lmax, 2);
   double k = sqrt(1-eps);
@@ -46,7 +46,7 @@ static double compute_coef(double lmin, double lmax, int n, double* q, double *c
     sncndn(r*v, rk, &sn, &cn, &dn);
     c[r] = sn*sn;
     a[r] = pow(cn/sn,2);
-    printf("coefficients: a[%d]=%g\n",r,a[r]);
+    //printf("coefficients: a[%d]=%g\n",r,a[r]);
   }
 
 
@@ -56,7 +56,7 @@ static double compute_coef(double lmin, double lmax, int n, double* q, double *c
   d *= pow(k, 2*n+1);
   //d = 7.1938e-02;
   double delta = d*d/pow(1+sqrt(1-d*d), 2);
-  printf("k=%20.15e d=%e delta=%e\n",k,d,delta);
+  //printf("k=%20.15e d=%e delta=%e\n",k,d,delta);
 
   //double A = (1-delta)/(1+delta);
   double A = 1;
@@ -77,15 +77,15 @@ static double compute_coef(double lmin, double lmax, int n, double* q, double *c
   {
     cc[i] *= 1;
     //q[i] *= A*lmax;
-    q[i] *= 1;
+    q[i] *= -1;
   }
 
   // reverse order
-//  for(int i=0, j=n-1; i<j; ++i, --j) 
- // {
-  //  double tmp = cc[i]; cc[i] = cc[j]; cc[j] = tmp;
-   // tmp = q[i]; q[i] = q[j]; q[j] = tmp;
- // }
+  for(int i=0, j=n-1; i<j; ++i, --j) 
+ {
+    double tmp = cc[i]; cc[i] = cc[j]; cc[j] = tmp;
+    tmp = q[i]; q[i] = q[j]; q[j] = tmp;
+  }
 
 
   free(c);
@@ -128,23 +128,20 @@ int sign(double y,double*c, double *q,int size,double A){
 //	q[8]=6.4722e-05;
 //	q[9]=2.3893e-05;
 
-	for(i=0;i<10;i++){
-		printf("%f %f\n",sqrt(c[i]),q[i]);
-	}
+//	for(i=0;i<10;i++){
+//		printf("%f %f\n",sqrt(c[i]),q[i]);
+//	}
 
 	for(i=0;i<size;i++){
-		result+=((-1)*q[i]/(y*y+c[i]));
-		result1+=(q[i]/(y*y+c[i]));
-		printf("q[%d]=%e c[i]=%e y=%e result=%20.15e result1=%20.15e\n",i,q[i],sqrt(c[i]),y,result,result1);
+		result+=(q[i]/(y*y+c[i]));
+	//	printf("q[%d]=%e c[i]=%e y=%e result=%20.15e result1=%20.15e\n",i,q[i],sqrt(c[i]),y,result,result1);
 	}
-	printf("A=%20.15e y=%20.15e result=%20.15e result1=%20.15e\n",A,y,y*A*(1.0+result));
+	printf("%20.15e %20.15e %20.15e\n",y,y*A*(1.0+result),fabs(1.0-fabs(y*A*(1.0+result))));
 	return 0;
 }
 
-int zolotarev_coef(double lmin, double lmax, double err)
+int zolotarev_coef(double lmin, double lmax, double err,int size)
 {
- int size = get_order(lmin, lmax, err);
- size=10;
  double delta = compute_delta(lmin, lmax, size);
  double* c = malloc(sizeof(double)*size);
  double* q = malloc(sizeof(double)*size);
@@ -155,12 +152,13 @@ int zolotarev_coef(double lmin, double lmax, double err)
   {
     printf("\nZolotarev approximation of order %d\n", size);
     printf("--------------------------------------------\n");
-    for(int i=0; i<size; ++i) printf("c[i]=%20.15e  q[i]=%20.15e\n", sqrt(c[i]), q[i]);
+    for(int i=0; i<size; ++i) printf("c[%d]=%20.15e  q[%d]=%20.15e\n",i, sqrt(c[i]),i, q[i]);
     printf("\nlmin: %.15e lmax: %g delta: %.2e\n", lmin, lmax, delta);
     printf("--------------------------------------------\n\n");
   }
-  double y=-1;
-  for(y=-1;y<1;y=y+0.1)
+  printf("y			1/sqrt(y^2)		|1-|y/sqrt(y^2)||\n\n");
+  double y;
+  for(y=-1.0;y<1.0;y=y+0.001)
   {
 	sign(y,c,q,size,A);
 

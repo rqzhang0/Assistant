@@ -1,0 +1,10 @@
+set term eps
+set output "sign.eps"
+set title "sign function"
+set xlabel "y/sqrt(y^2)"
+set ylabel "effective mass"
+set yrange [0.4:0.5]
+set xrange [0:15]
+set xtic 5
+set mxtic 5
+plot "mass_con_10" using 1:2 with yerrorbars title "connected,num_vecs=10",\

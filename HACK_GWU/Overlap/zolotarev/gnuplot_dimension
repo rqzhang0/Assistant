@@ -1,0 +1,11 @@
+set term eps
+set logscale y 2
+set output "dimension.eps"
+set title "delta(n)"
+set xlabel "n"
+set ylabel "delta"
+#set yrange [1:e-40]
+set xrange [0:92]
+set xtic 5
+set mxtic 5
+plot "plot_2" using 1:2 title "varying dimension",\
