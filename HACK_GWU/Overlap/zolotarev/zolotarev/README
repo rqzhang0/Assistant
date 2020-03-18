@@ -1,0 +1,10 @@
+COMPILE:
+	bash compile.sh 
+Execute the binary:
+	./test lmin lmax error n
+
+NOTE that it appriximate the y/sqrt(y^2) and lmin<y^2<lmax. For simplication, I always set lmax=1, so if you want to vary the range of y^2 you should change lmin parameter.
+
+error is the relative diviation error. It always equal to the maximum relative diviation error.
+
+n is the dimension of zolotarev approximation.
