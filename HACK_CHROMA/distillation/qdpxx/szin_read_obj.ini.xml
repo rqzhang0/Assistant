@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<chroma>
+<annotation>
+Write some SZIN objects
+</annotation>
+<Param> 
+  <InlineMeasurements>
+
+    <elem>
+      <annotation>
+        Write the config
+      </annotation>
+      <Name>SZIN_WRITE_NAMED_OBJECT</Name>
+      <Frequency>1</Frequency>
+      <NamedObject>
+        <object_id>default_gauge_field</object_id>
+        <object_type>Multi1dLatticeColorMatrix</object_type>
+      </NamedObject>
+      <File>
+        <file_name>szin.cfg</file_name>
+      </File>
+    </elem>
+
+
+  </InlineMeasurements>
+   <nrow>12 12 12 128</nrow>
+</Param>
+<Cfg>
+ <cfg_type>SZINQIO</cfg_type>
+ <cfg_file>test.lime</cfg_file>
+</Cfg>
+</chroma>
+
+

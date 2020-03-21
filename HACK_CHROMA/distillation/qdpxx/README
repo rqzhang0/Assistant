@@ -1,0 +1,27 @@
+Files
+-----
+
+colorvec.cc 	The file that create colorvectors.
+
+szin_io.cc 	read the szinQIO format configuration file from disk
+
+
+
+List of functions
+-----------------
+
+
+
+List of Questions
+-----------------
+	Q1. First of all, we need to read gauge configurations into memory
+	 "SZINQIO"	
+
+
+	Q2. 
+
+Solutions
+---------
+	S1. If you don't need real calculation, you can just generate an random 
+	configuration use gaussian(u). In order to compare with original chroma 
+	program, we need a function to read configurations from disk.

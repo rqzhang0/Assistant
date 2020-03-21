@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------------
+
+
+				J/Psi-> gamma + eta_c 
+
+--------------------------------------------------------------------------------------
+
+We need to caluculate the three point function of this radiative decay process. Note that both J/Psi and eta_c are meson. So we should use the seqsource-meson.ini.xml as input. We need to modify it to satisfy our desired situation.
+
+Fistly, we need to make sure what kinds of SeqSourceType we need to use. Then we can test the sequential source.
+
+
+

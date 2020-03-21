@@ -1,0 +1,4 @@
+ERROR0:
+------
+	when read configuration, date_size didn't return a resonable number.
+	Because I am hacking szin but my configuration is SZINQIO format.

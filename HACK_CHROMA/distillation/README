@@ -1,0 +1,15 @@
+Write the ditillation code by myself
+
+Firstly, translate chroma code into QDP++ code
+
+Seocndly, translate QDP++ code into QDP/C code
+
+Last, Write a cuda version of these code.
+
+
+INVERTER PART:
+
+The most complicated part may be the inverter part. Firstly, I will need a cpu version of inverter. Secondly, I will need a gpu version of inverter.  For gpu, I'd like to use quda as my inverter.
+
+
+NOTE that translate the complacated case into simple and familar case. For example, I can define some data structure by myself and translate c++ code into ansi c style code.

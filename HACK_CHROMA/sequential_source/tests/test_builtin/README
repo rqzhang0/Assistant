@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------------
+
+				sequential source
+
+--------------------------------------------------------------------------------------
+
+
+Files
+-----
+	seqsource-baryon.ini.xml
+
+	
+	seqsourdce-derivmeson.ini.xml
+
+
+	seqsource-meson.ini.xml
+
+
+	seqsource-photon.ini.xml
+
+
+String name
+------------
+
+	SEQSOURCE
+
+
+SeqSourceType
+--------------
+
+	NUCL_U_UNPOL
+	
+	NUCL_D_UNPOL
+	
+	NUCL_U_POL
+
+	NUCL_D_POL
+
+	DELTA_U_UNPOL
+
+	DELTA_D_UNPOL
+
+	NUCL_U_UNPOL_NONREL
+
+	NUCL_D_UNPOL_NONREL
+
+	NUCL_U_POL_NONREL
+
+	NUCL_D_POL_NONREL
+
+	NUCL_U_MIXED_NONREL
+
+	NUCL_D_MIXED_NONREL
+
+	NUCL_U_MIXED_NONREL_NEGPAR
+
+	NUCL_D_MIXED_NONREL_NEGPAR
+
+	NUCL_NUCL_U
+
+	NUCL_NUCL_D
+
+	a0-pionxNABLA_T1
+	
+	a0-a0xNABLA_T1
+
+	a0-a0_2xNABLA_T1
+
+	......
+	......
+	......
+
+	a0-a0
+
+	a0-rho_x_1
+
+	a0-rho_y_1
+
+	a0-rho_z_1
+
+	a0-b1_z
+
+	a0-b1_x
+
+	a0-b1_y
+
+	a0-pion_2
+
+	a0-a0-2
+
+	a0-rho_x_2
+	
+	a0-rho_y_2
+
+	a0-rho_z_2
+
+	a0-a1_z
+	
+	a0-pion-1
+
+	pion_1-pion_1
+
+	PION-PHOTON
+
+	PION-POINT_SPLIT_PHOTON

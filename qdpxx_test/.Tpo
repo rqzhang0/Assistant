@@ -1,0 +1,1016 @@
+t_foo.o: t_foo.cc /usr/include/stdc-predef.h \
+ /usr/include/c++/4.8.2/iostream \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h \
+ /usr/include/bits/wordsize.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/cpu_defines.h \
+ /usr/include/c++/4.8.2/ostream /usr/include/c++/4.8.2/ios \
+ /usr/include/c++/4.8.2/iosfwd /usr/include/c++/4.8.2/bits/stringfwd.h \
+ /usr/include/c++/4.8.2/bits/memoryfwd.h \
+ /usr/include/c++/4.8.2/bits/postypes.h /usr/include/c++/4.8.2/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
+ /usr/include/xlocale.h /usr/include/c++/4.8.2/exception \
+ /usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/4.8.2/bits/exception_ptr.h \
+ /usr/include/c++/4.8.2/bits/exception_defines.h \
+ /usr/include/c++/4.8.2/bits/nested_exception.h \
+ /usr/include/c++/4.8.2/bits/char_traits.h \
+ /usr/include/c++/4.8.2/bits/stl_algobase.h \
+ /usr/include/c++/4.8.2/bits/functexcept.h \
+ /usr/include/c++/4.8.2/bits/cpp_type_traits.h \
+ /usr/include/c++/4.8.2/ext/type_traits.h \
+ /usr/include/c++/4.8.2/ext/numeric_traits.h \
+ /usr/include/c++/4.8.2/bits/stl_pair.h \
+ /usr/include/c++/4.8.2/bits/move.h \
+ /usr/include/c++/4.8.2/bits/concept_check.h \
+ /usr/include/c++/4.8.2/type_traits \
+ /usr/include/c++/4.8.2/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.8.2/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.8.2/debug/debug.h \
+ /usr/include/c++/4.8.2/bits/stl_iterator.h \
+ /usr/include/c++/4.8.2/cstdint \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h \
+ /usr/include/stdint.h /usr/include/c++/4.8.2/bits/localefwd.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++locale.h \
+ /usr/include/c++/4.8.2/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/4.8.2/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/byteswap-16.h /usr/include/c++/4.8.2/bits/ios_base.h \
+ /usr/include/c++/4.8.2/ext/atomicity.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/atomic_word.h \
+ /usr/include/c++/4.8.2/bits/locale_classes.h \
+ /usr/include/c++/4.8.2/string /usr/include/c++/4.8.2/bits/allocator.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h \
+ /usr/include/c++/4.8.2/ext/new_allocator.h /usr/include/c++/4.8.2/new \
+ /usr/include/c++/4.8.2/bits/ostream_insert.h \
+ /usr/include/c++/4.8.2/bits/cxxabi_forced.h \
+ /usr/include/c++/4.8.2/bits/stl_function.h \
+ /usr/include/c++/4.8.2/backward/binders.h \
+ /usr/include/c++/4.8.2/bits/range_access.h \
+ /usr/include/c++/4.8.2/bits/basic_string.h \
+ /usr/include/c++/4.8.2/initializer_list \
+ /usr/include/c++/4.8.2/ext/string_conversions.h \
+ /usr/include/c++/4.8.2/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/sys/sysmacros.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/4.8.2/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/c++/4.8.2/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/4.8.2/bits/functional_hash.h \
+ /usr/include/c++/4.8.2/bits/hash_bytes.h \
+ /usr/include/c++/4.8.2/bits/basic_string.tcc \
+ /usr/include/c++/4.8.2/bits/locale_classes.tcc \
+ /usr/include/c++/4.8.2/streambuf \
+ /usr/include/c++/4.8.2/bits/streambuf.tcc \
+ /usr/include/c++/4.8.2/bits/basic_ios.h \
+ /usr/include/c++/4.8.2/bits/locale_facets.h \
+ /usr/include/c++/4.8.2/cwctype /usr/include/wctype.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/4.8.2/bits/streambuf_iterator.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/4.8.2/bits/locale_facets.tcc \
+ /usr/include/c++/4.8.2/bits/basic_ios.tcc \
+ /usr/include/c++/4.8.2/bits/ostream.tcc /usr/include/c++/4.8.2/istream \
+ /usr/include/c++/4.8.2/bits/istream.tcc \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_config.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_config_internal.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_precision.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/PETE.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/Scalar.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/TypeComputations.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/TreeNodes.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/OperatorTags.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/Functors.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/Combiners.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/ForEach.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/PETE/CreateLeaf.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_init.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_forward.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_multi.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_config.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_arrays.h \
+ /usr/include/c++/4.8.2/vector \
+ /usr/include/c++/4.8.2/bits/stl_construct.h \
+ /usr/include/c++/4.8.2/ext/alloc_traits.h \
+ /usr/include/c++/4.8.2/bits/alloc_traits.h \
+ /usr/include/c++/4.8.2/bits/ptr_traits.h \
+ /usr/include/c++/4.8.2/bits/stl_uninitialized.h \
+ /usr/include/c++/4.8.2/bits/stl_vector.h \
+ /usr/include/c++/4.8.2/bits/stl_bvector.h \
+ /usr/include/c++/4.8.2/bits/vector.tcc \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_params.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_layout.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_io.h \
+ /usr/include/c++/4.8.2/fstream /usr/include/c++/4.8.2/bits/codecvt.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/4.8.2/bits/fstream.tcc /usr/include/c++/4.8.2/sstream \
+ /usr/include/c++/4.8.2/bits/sstream.tcc \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_byteorder.h \
+ /usr/include/c++/4.8.2/map /usr/include/c++/4.8.2/bits/stl_tree.h \
+ /usr/include/c++/4.8.2/bits/stl_map.h /usr/include/c++/4.8.2/tuple \
+ /usr/include/c++/4.8.2/utility /usr/include/c++/4.8.2/bits/stl_relops.h \
+ /usr/include/c++/4.8.2/array /usr/include/c++/4.8.2/stdexcept \
+ /usr/include/c++/4.8.2/bits/uses_allocator.h \
+ /usr/include/c++/4.8.2/bits/stl_multimap.h /usr/include/c++/4.8.2/list \
+ /usr/include/c++/4.8.2/bits/stl_list.h \
+ /usr/include/c++/4.8.2/bits/list.tcc /usr/include/c++/4.8.2/complex \
+ /usr/include/c++/4.8.2/cmath /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_stdio.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_xmlio.h \
+ /usr/include/c++/4.8.2/stack /usr/include/c++/4.8.2/deque \
+ /usr/include/c++/4.8.2/bits/stl_deque.h \
+ /usr/include/c++/4.8.2/bits/deque.tcc \
+ /usr/include/c++/4.8.2/bits/stl_stack.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/xml_simplewriter.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/xml_attribute.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/basic_xpath_reader.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/tree.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /usr/include/libxml2/libxml/xpath.h \
+ /usr/include/libxml2/libxml/xpathInternals.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/xml_document.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdpio.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qio.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qio_config.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qio_config_internal.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qio_string.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qio_stdint.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qio_config.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml_internal.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml_private.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml_ildg_record.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml_usqcd_prop.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml_usqcd_ksprop.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qioxml_usqcd_gauge.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lrl.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_config.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_config_internal.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/dcap-overload.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_defs.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_header.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_fixed_types.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_config.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_writer.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/lime_reader.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/dml.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_defs.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_scalarsite_defs.h \
+ /usr/include/c++/4.8.2/cstring /usr/include/string.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_subset.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_map.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_stopwatch.h \
+ /usr/include/sys/time.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_traits.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdpexpr.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdptype.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdpsubtype.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/QDPOperators.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_allocator.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_default_allocator.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_singleton.h \
+ /usr/include/c++/4.8.2/algorithm /usr/include/c++/4.8.2/bits/stl_algo.h \
+ /usr/include/c++/4.8.2/bits/algorithmfwd.h \
+ /usr/include/c++/4.8.2/bits/stl_heap.h \
+ /usr/include/c++/4.8.2/bits/stl_tempbuf.h /usr/include/c++/4.8.2/random \
+ /usr/include/c++/4.8.2/limits /usr/include/c++/4.8.2/bits/random.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/opt_random.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/x86intrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/immintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/adxintrin.h \
+ /usr/include/c++/4.8.2/bits/random.tcc /usr/include/c++/4.8.2/numeric \
+ /usr/include/c++/4.8.2/bits/stl_numeric.h \
+ /usr/include/c++/4.8.2/functional /usr/include/c++/4.8.2/typeinfo \
+ /usr/include/c++/4.8.2/cassert /usr/include/assert.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_newops.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_optops.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_profile.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_simpleword.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_reality.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_inner.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primitive.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primscalar.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primmatrix.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primvector.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primseed.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primcolormat.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primcolorvec.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primgamma.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primspinmat.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_primspinvec.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_outer.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_outersubtype.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_globalfuncs.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_specializations.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_random.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_dispatch.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_parscalar_specific.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qmp.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_scalarsite_generic.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_linalg.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_nn.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_na.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_an.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_aa.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mat_vec.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_addvec.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_linalg_wrapper.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpy3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxmy3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpby3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxmby3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vscal.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_local_sumsq.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpy3_norm.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxmby3_norm.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_local_vcdot.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_local_vcdot_real.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas_wrapper.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_cblas.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcscal.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxpy3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxmy3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxpby3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxmby3.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_cblas_wrapper.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpy3_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaypx3_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vadd3_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vscal_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpby3_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_g5.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas_g5_wrapper.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_flopcount.h \
+ /home/renqiang/Software/CLQCD/chroma_build/include/qdp_globalfuncs_subtype.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/4.8.2/iostream:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/include/c++/4.8.2/ostream:
+
+/usr/include/c++/4.8.2/ios:
+
+/usr/include/c++/4.8.2/iosfwd:
+
+/usr/include/c++/4.8.2/bits/stringfwd.h:
+
+/usr/include/c++/4.8.2/bits/memoryfwd.h:
+
+/usr/include/c++/4.8.2/bits/postypes.h:
+
+/usr/include/c++/4.8.2/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/c++/4.8.2/exception:
+
+/usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/4.8.2/bits/exception_ptr.h:
+
+/usr/include/c++/4.8.2/bits/exception_defines.h:
+
+/usr/include/c++/4.8.2/bits/nested_exception.h:
+
+/usr/include/c++/4.8.2/bits/char_traits.h:
+
+/usr/include/c++/4.8.2/bits/stl_algobase.h:
+
+/usr/include/c++/4.8.2/bits/functexcept.h:
+
+/usr/include/c++/4.8.2/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.8.2/ext/type_traits.h:
+
+/usr/include/c++/4.8.2/ext/numeric_traits.h:
+
+/usr/include/c++/4.8.2/bits/stl_pair.h:
+
+/usr/include/c++/4.8.2/bits/move.h:
+
+/usr/include/c++/4.8.2/bits/concept_check.h:
+
+/usr/include/c++/4.8.2/type_traits:
+
+/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.8.2/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.8.2/debug/debug.h:
+
+/usr/include/c++/4.8.2/bits/stl_iterator.h:
+
+/usr/include/c++/4.8.2/cstdint:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/4.8.2/bits/localefwd.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++locale.h:
+
+/usr/include/c++/4.8.2/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/4.8.2/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/c++/4.8.2/bits/ios_base.h:
+
+/usr/include/c++/4.8.2/ext/atomicity.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/atomic_word.h:
+
+/usr/include/c++/4.8.2/bits/locale_classes.h:
+
+/usr/include/c++/4.8.2/string:
+
+/usr/include/c++/4.8.2/bits/allocator.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:
+
+/usr/include/c++/4.8.2/ext/new_allocator.h:
+
+/usr/include/c++/4.8.2/new:
+
+/usr/include/c++/4.8.2/bits/ostream_insert.h:
+
+/usr/include/c++/4.8.2/bits/cxxabi_forced.h:
+
+/usr/include/c++/4.8.2/bits/stl_function.h:
+
+/usr/include/c++/4.8.2/backward/binders.h:
+
+/usr/include/c++/4.8.2/bits/range_access.h:
+
+/usr/include/c++/4.8.2/bits/basic_string.h:
+
+/usr/include/c++/4.8.2/initializer_list:
+
+/usr/include/c++/4.8.2/ext/string_conversions.h:
+
+/usr/include/c++/4.8.2/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/c++/4.8.2/cstdio:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/c++/4.8.2/cerrno:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/4.8.2/bits/functional_hash.h:
+
+/usr/include/c++/4.8.2/bits/hash_bytes.h:
+
+/usr/include/c++/4.8.2/bits/basic_string.tcc:
+
+/usr/include/c++/4.8.2/bits/locale_classes.tcc:
+
+/usr/include/c++/4.8.2/streambuf:
+
+/usr/include/c++/4.8.2/bits/streambuf.tcc:
+
+/usr/include/c++/4.8.2/bits/basic_ios.h:
+
+/usr/include/c++/4.8.2/bits/locale_facets.h:
+
+/usr/include/c++/4.8.2/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_base.h:
+
+/usr/include/c++/4.8.2/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_inline.h:
+
+/usr/include/c++/4.8.2/bits/locale_facets.tcc:
+
+/usr/include/c++/4.8.2/bits/basic_ios.tcc:
+
+/usr/include/c++/4.8.2/bits/ostream.tcc:
+
+/usr/include/c++/4.8.2/istream:
+
+/usr/include/c++/4.8.2/bits/istream.tcc:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_config.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_config_internal.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_precision.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/PETE.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/Scalar.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/TypeComputations.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/TreeNodes.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/OperatorTags.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/Functors.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/Combiners.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/ForEach.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/PETE/CreateLeaf.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_init.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_forward.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_multi.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_config.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_arrays.h:
+
+/usr/include/c++/4.8.2/vector:
+
+/usr/include/c++/4.8.2/bits/stl_construct.h:
+
+/usr/include/c++/4.8.2/ext/alloc_traits.h:
+
+/usr/include/c++/4.8.2/bits/alloc_traits.h:
+
+/usr/include/c++/4.8.2/bits/ptr_traits.h:
+
+/usr/include/c++/4.8.2/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.8.2/bits/stl_vector.h:
+
+/usr/include/c++/4.8.2/bits/stl_bvector.h:
+
+/usr/include/c++/4.8.2/bits/vector.tcc:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_params.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_layout.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_io.h:
+
+/usr/include/c++/4.8.2/fstream:
+
+/usr/include/c++/4.8.2/bits/codecvt.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/basic_file.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++io.h:
+
+/usr/include/c++/4.8.2/bits/fstream.tcc:
+
+/usr/include/c++/4.8.2/sstream:
+
+/usr/include/c++/4.8.2/bits/sstream.tcc:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_byteorder.h:
+
+/usr/include/c++/4.8.2/map:
+
+/usr/include/c++/4.8.2/bits/stl_tree.h:
+
+/usr/include/c++/4.8.2/bits/stl_map.h:
+
+/usr/include/c++/4.8.2/tuple:
+
+/usr/include/c++/4.8.2/utility:
+
+/usr/include/c++/4.8.2/bits/stl_relops.h:
+
+/usr/include/c++/4.8.2/array:
+
+/usr/include/c++/4.8.2/stdexcept:
+
+/usr/include/c++/4.8.2/bits/uses_allocator.h:
+
+/usr/include/c++/4.8.2/bits/stl_multimap.h:
+
+/usr/include/c++/4.8.2/list:
+
+/usr/include/c++/4.8.2/bits/stl_list.h:
+
+/usr/include/c++/4.8.2/bits/list.tcc:
+
+/usr/include/c++/4.8.2/complex:
+
+/usr/include/c++/4.8.2/cmath:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_stdio.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_xmlio.h:
+
+/usr/include/c++/4.8.2/stack:
+
+/usr/include/c++/4.8.2/deque:
+
+/usr/include/c++/4.8.2/bits/stl_deque.h:
+
+/usr/include/c++/4.8.2/bits/deque.tcc:
+
+/usr/include/c++/4.8.2/bits/stl_stack.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/xml_simplewriter.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/xml_attribute.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/basic_xpath_reader.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+/usr/include/libxml2/libxml/xpath.h:
+
+/usr/include/libxml2/libxml/xpathInternals.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/xml_document.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdpio.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qio.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qio_config.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qio_config_internal.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qio_string.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qio_stdint.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qio_config.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml_internal.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml_private.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml_ildg_record.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml_usqcd_prop.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml_usqcd_ksprop.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qioxml_usqcd_gauge.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lrl.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_config.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_config_internal.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/dcap-overload.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_defs.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_header.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_fixed_types.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_config.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_writer.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/lime_reader.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/dml.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_defs.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_scalarsite_defs.h:
+
+/usr/include/c++/4.8.2/cstring:
+
+/usr/include/string.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_subset.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_map.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_stopwatch.h:
+
+/usr/include/sys/time.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_traits.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdpexpr.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdptype.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_qdpsubtype.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/QDPOperators.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_allocator.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_default_allocator.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_singleton.h:
+
+/usr/include/c++/4.8.2/algorithm:
+
+/usr/include/c++/4.8.2/bits/stl_algo.h:
+
+/usr/include/c++/4.8.2/bits/algorithmfwd.h:
+
+/usr/include/c++/4.8.2/bits/stl_heap.h:
+
+/usr/include/c++/4.8.2/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.8.2/random:
+
+/usr/include/c++/4.8.2/limits:
+
+/usr/include/c++/4.8.2/bits/random.h:
+
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/opt_random.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/x86intrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/ia32intrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/immintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/fxsrintrin.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/adxintrin.h:
+
+/usr/include/c++/4.8.2/bits/random.tcc:
+
+/usr/include/c++/4.8.2/numeric:
+
+/usr/include/c++/4.8.2/bits/stl_numeric.h:
+
+/usr/include/c++/4.8.2/functional:
+
+/usr/include/c++/4.8.2/typeinfo:
+
+/usr/include/c++/4.8.2/cassert:
+
+/usr/include/assert.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_newops.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_optops.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_profile.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_simpleword.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_reality.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_inner.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primitive.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primscalar.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primmatrix.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primvector.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primseed.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primcolormat.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primcolorvec.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primgamma.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primspinmat.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_primspinvec.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_outer.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_outersubtype.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_globalfuncs.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_specializations.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_random.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_dispatch.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_parscalar_specific.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qmp.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_scalarsite_generic.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_linalg.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_nn.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_na.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_an.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mult_aa.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_mat_vec.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_addvec.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_linalg_wrapper.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpy3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxmy3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpby3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxmby3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vscal.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_local_sumsq.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpy3_norm.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxmby3_norm.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_local_vcdot.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_local_vcdot_real.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas_wrapper.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_cblas.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcscal.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxpy3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxmy3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxpby3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vcaxmby3.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_cblas_wrapper.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpy3_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaypx3_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vadd3_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vscal_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_vaxpby3_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/generic_blas_g5.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/scalarsite_generic/qdp_scalarsite_generic_blas_g5_wrapper.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_flopcount.h:
+
+/home/renqiang/Software/CLQCD/chroma_build/include/qdp_globalfuncs_subtype.h:
