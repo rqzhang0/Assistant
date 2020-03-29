@@ -77,10 +77,20 @@ int main(int argc, char *argv[])
 
 	read(cfg_in,header.cfg_version);
 	read(cfg_in,header.Nd);
+	read(cfg_in,header.Nc);	
+
+	header.nrow.resize(Nd);
+	read(cfg_in,header.nrow,4);
 
 	printf("version=%d\n",header.cfg_version);
 	printf("Nd=%d\n",header.Nd);
-        
+	printf("Nc=%d\n",header.Nc);
+	printf("nrow[0]=%d\n",header.nrow[0]);
+       
+	//Read SU(3) matrix
+	LatticeColorMatrixF u_old;
+		
+
 
 	QDP_finalize();
 	

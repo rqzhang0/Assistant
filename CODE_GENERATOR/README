@@ -1,0 +1,40 @@
+This is a code-generator under assistant project
+------------------------------------------------
+
+	
+
+
+BUCKUP:
+-------
+	It's based on python. 
+	It generats pure c program.
+	Any program can be run directly in python.
+
+	sample.py
+	
+	case1: 
+		doesn't depend on any extra library of std.
+	
+	case2: 
+		depend on some extra library.
+		
+		case1:	cal function directly.
+		case2: 	write function in based std lib.
+
+	
+	Then we can conert sample.py to c source code.
+
+	We would need:
+		1. a sample txt file that contain some c source code, which would be
+			modified by python when refer to it.
+		2. a simple interpreter to understand user's input. I define every 
+		function as a print function. By calling these function, it would 
+		print corresponding code of function. So we actually don't need 
+		extra interpreter.
+		3. Program should decide what header file should be include. To 
+		achieve this, I need every function should be labled by some header
+		file. And I should write a function called header to decide what to 
+		include.
+
+		
+	

@@ -1,0 +1,66 @@
+CLASS:
+------
+	zolotarev_coef
+
+
+Functions:
+----------
+	
+
+	ellipticK(double rK)	
+	--------------------
+
+			Complete elliptic integral
+
+	void sncndn(double u, double rk, double *sn, double *cn, double *dn)
+	--------------------------------------------------------------------
+		
+			Jacobi elliptic integral
+	
+	double compute_delta (double lmin, double lmax, int n)
+	------------------------------------------------------
+
+			relative deviation error
+
+	int get_order(double lmin, double lmax, double err)
+	---------------------------------------------------	
+
+			necessary order of approximation for a given err
+	
+
+	void compute_coef(double lmin, double lmax, int n)
+	--------------------------------------------------
+	
+			coefficients of approximation
+
+	double sign(double y):
+	----------------------
+			
+			sign function of y
+
+	zolotarev_coef(double lmin, double lmax, double err)
+	----------------------------------------------------
+
+			evaluate coefficients of given parameters 
+			by calling compute_coef
+	
+	
+Functions should be implemented:
+--------------------------------
+	
+	1. ellipticK
+	
+	2. sncndn
+	
+	3. compute_delta
+	
+	4. compute_coef
+
+	5.
+
+
+NOTES:
+------
+	N1.  I compared the complete elliptic integral of the first kind in NR3 with
+	in mathematica. I find that EllipticK[x] in mathematica is equal to  
+	rf(0,1-x*x,1) in NR3. And a comparision with openQCD is necessary.

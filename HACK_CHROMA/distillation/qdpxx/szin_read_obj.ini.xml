@@ -26,8 +26,8 @@ Write some SZIN objects
    <nrow>12 12 12 128</nrow>
 </Param>
 <Cfg>
- <cfg_type>SZINQIO</cfg_type>
- <cfg_file>test.lime</cfg_file>
+ <cfg_type>SZIN</cfg_type>
+ <cfg_file>szin.cfg</cfg_file>
 </Cfg>
 </chroma>
 

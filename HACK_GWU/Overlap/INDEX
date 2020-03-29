@@ -1,0 +1,15 @@
+Directory:
+----------
+	zolotarev
+	---------
+			This file tests the ration approximation of sign function 
+			based on the original gwu-code files. Some function has been
+			modified because I find it's not correct.
+
+
+	zolotarev_class	
+	---------------	
+			Required by Yibo Yang, sort these functions of rational
+			approximation into one class. At the same time, I should
+			write the elliptic function by myself to avoid GPL licence.
+			
