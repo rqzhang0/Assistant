@@ -36,5 +36,9 @@ BUCKUP:
 		file. And I should write a function called header to decide what to 
 		include.
 
-		
+		Basic functions:
+		----------------
+			1. operation  "=","+","-","*"
+			2. Declare data  int, float, double, char, string, pointer
+	
 	

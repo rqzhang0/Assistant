@@ -1,2 +1,7 @@
 HELLO_WORLD:
 		The simple version of hello world.
+
+ZOLOTAREV:
+		Simple code of zolotarev codefficients based on openQCD.
+NR:
+		Implementation of numerical recips.

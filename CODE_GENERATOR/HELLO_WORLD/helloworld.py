@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 def c_print(str):
+	print "//header <stdio.h>"
 	print "printf(\""+str+"\\n\");"
 
 def c_generator(str):
