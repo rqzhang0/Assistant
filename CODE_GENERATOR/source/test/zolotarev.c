@@ -4,20 +4,20 @@
 
 double rf(double xn, double yn, double zn){
 	double un=(xn+yn+zn)/3.0;
-	double Xn=1-(xn/un);
-	double Yn=1-(yn/un);
-	double Zn=1-(zn/un);
-	double Et=0.00025;
+	double Xn=1-xn/un;
+	double Yn=1-yn/un;
+	double Zn=1-zn/un;
+	double Et=0.0025;
 	double Ln,RF,E2,E3;
-	while((Et<abs(Xn))||(Et<abs(Yn))||(Et<abs(Zn))){
+	while(((Et<fabs(Xn))||(Et<fabs(Yn)))||(Et<fabs(Zn))){
 		Ln=sqrt(xn*yn)+sqrt(xn*zn)+sqrt(yn*zn);
-		xn=(xn+Ln)/4;
-		yn=(yn+Ln)/4;
-		zn=(zn+Ln)/4;	
+		xn=(xn+Ln)/4.0;
+		yn=(yn+Ln)/4.0;
+		zn=(zn+Ln)/4.0;	
 		un=(xn+yn+zn)/3.0;
-		Xn=1-(xn/un);
-		Yn=1-(yn/un);
-		Zn=1-(zn/un);
+		Xn=1-xn/un;
+		Yn=1-yn/un;
+		Zn=1-zn/un;
 	}
 	
 	E2=Xn*Yn-Zn*Zn;
@@ -35,13 +35,14 @@ double ellipticK( double k)
 	 exit(EXIT_FAILURE);
 	}
 	double Ek;
-	Ek=rf(0,1-(k*k),1);
+	Ek=rf(0.0,1.0-(k*k),1.0);
 	return Ek;	
 }
 
 int main(void){
-	double Ek=ellipticK(0.5);
-	printf("Ek=%f\n",Ek);
+	double Ek=ellipticK(0.0001);
+	double Ef=ellipticK(0.99);
+	printf("Ek=%f %f\n",Ek,Ef);
 
 	return 0;
 }
