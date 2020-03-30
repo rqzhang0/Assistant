@@ -35,10 +35,26 @@ BUCKUP:
 		achieve this, I need every function should be labled by some header
 		file. And I should write a function called header to decide what to 
 		include.
+		
+		4. assist coding. The most importantly, this program should help me
+		generating code from begainning rather than just call some function 
+		in extra library. It should make programming simpler. To achieve this,
+		we need to define some operations which gnerally used and free of bug.
+		For example, assignments, declaration, malloc of pointers, realloc of
+		pointers, read or write of files. Read line or split line, for loops,
+		do while etc. With these basic operations, we can write psedo-code 
+		style function and generate ansi c code. 
 
 		Basic functions:
 		----------------
 			1. operation  "=","+","-","*"
 			2. Declare data  int, float, double, char, string, pointer
-	
-	
+			3. Declaration of functions
+			4. Definition of functions
+			5. Definition and usage of structure	
+
+POINTERS:
+---------
+	This program should ristric our using of pointers to ensure safe.
+	Firstly, available operation is restricted;
+	Secondly, length of pointers is restricted.	

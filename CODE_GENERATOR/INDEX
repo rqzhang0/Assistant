@@ -5,3 +5,5 @@ ZOLOTAREV:
 		Simple code of zolotarev codefficients based on openQCD.
 NR:
 		Implementation of numerical recips.
+LSH:
+		a simple shell

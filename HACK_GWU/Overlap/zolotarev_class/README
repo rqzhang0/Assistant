@@ -63,4 +63,22 @@ NOTES:
 ------
 	N1.  I compared the complete elliptic integral of the first kind in NR3 with
 	in mathematica. I find that EllipticK[x] in mathematica is equal to  
-	rf(0,1-x*x,1) in NR3. And a comparision with openQCD is necessary.
+	rf(0,1-x*x,1) in NR3. And a comparision with openQCD is necessary. 
+	Unfortuantely, I find that the value of complete elliptic integral and jacobi
+	elliptic function in NR is consitence with Mathematica but quit 
+	different from openQCD.
+	Actually, there is a relation:
+	
+	OPENQCD:		Mathematica
+		ellipticK(rk) --> ellipticK(k^2)
+		sncndn(u,rk,sn,cn,dn) --> sn(u,k^2),cn(u,k^2),dn(u,k^2)
+		k=rk/sqrt(1+rk^2)
+	NR:
+		ellipticK(k) --> ellipticK(k^2)
+		sncndn(u,1-k^2,sn,cn,dn) --> sn(u,k^2),cn(u,k^2),dn(u,k^2)
+
+
+	OPENQCD:		NR:			Assistant:
+	
+	ellipticK(rk) -->	ellipticK(k)		ellipticK(k)
+	sncndn(u,rk,sn,cn,dn)	sncndn(u,1-k^2,sn,cn,dn) sncndn(u,k^2,sn,cn,dn) 

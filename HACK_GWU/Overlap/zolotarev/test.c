@@ -4,6 +4,8 @@
 #include "zolotarev.h"
 
 int main(int argc, char *argv[]){
+	
+	
 	if(argc!=5){
 		printf("Error: Usage command lmix lmax error n \n");	
 		printf("lmin: the minimum of y\n ");
@@ -16,6 +18,18 @@ int main(int argc, char *argv[]){
 	
 	int i;
 	double delta;
+	//Test ellipticK function
+	for(i=1;i<10;i++){
+		printf("ellipticK(%f)=%f\n",i/10.0,ellipticK(i/10.0));
+
+	}
+
+	double uu=0.4;
+	double kc=0.6;
+	double emmc=kc*kc;
+	double arr[3];
+	sncndn(uu,emmc,&arr[0],&arr[1],&arr[2]);
+	printf("sn=%f cn=%f dn=%f \n",arr[0],arr[1],arr[2]);
 
 	//vary the value of lmin 
 	printf("Vary lmin: \n");
