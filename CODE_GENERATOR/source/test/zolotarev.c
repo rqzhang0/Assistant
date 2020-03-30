@@ -39,6 +39,14 @@ double ellipticK( double k)
 	return Ek;	
 }
 
+void sncndn(float uu, float emmc, float *sn, float *cn, float *dn )
+{
+	
+
+
+
+}
+
 int main(void){
 	double Ek=ellipticK(0.0001);
 	double Ef=ellipticK(0.99);
