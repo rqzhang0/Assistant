@@ -1,0 +1,5 @@
+NOTE:
+	sncndn(u,k)
+
+	When k or u is large enough, the result is not correct.
+	It seems that the larger the inputs the larger the relative deviation
