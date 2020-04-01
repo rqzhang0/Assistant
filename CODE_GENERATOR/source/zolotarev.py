@@ -18,16 +18,18 @@ def DECLARE(vname):
 			print "DECLARE ERROR: arguments should string list."
 	for i in range(len(vname)-1):
 		print vname[0]+" "+vname[i+1]+";"
+
 def WHILE_START(ARG):
 	#ARG=["condition"]
 	#while(condition){
-	if(len(ARG)!=1):
-		print "WHILE_START ERROR: Length of array should be 1."
 	for i in range(len(ARG)):
 		if(type(ARG[i])!=str):
 			print "WHILE_START ERROR: arguments should be string list"
-	for i in range(len(ARG)):
-		print "while"+"("+ARG[0]+"){"
+	
+	print "while("+"("+ARG[0]+")"+ARG[len(ARG)-1],
+	for i in range(len(ARG)-2):
+		print ARG[len(ARG)-1]+"("+ARG[i+1]+")",
+	print "){"
 
 def WHILE_END():
 	print "}"
@@ -64,5 +66,14 @@ def FOR_END():
 	print "}"
 
 
+def DEFINE(ARG):
+	# define a function ARG[0](ARG[1],ARG[2],ARG[3]...)	
+	for i in range(len(ARG)):
+		if(type(ARG)!=str):
+			print "DEFINE ERROR: arguments should be string list."
 
+	print ARG[0]+"("
+	for i in range(len(ARG)-1):
+		print ARG[i+1]+";",
 
+	
