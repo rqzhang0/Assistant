@@ -53,7 +53,9 @@ void sncndn(double uu, double emmc, double *sn, double *cn, double *dn)
 				printf("j=%d a=%f \n",ii,a);
 				a=c/b;
 			}
+			printf("tmp=%f\n",c);
 			a=1.0/sqrt(c*c+1.0);
+			printf("a=%f\n",a);
 			*sn=(*sn >= 0.0 ? a : -a);
 			*cn=c*(*sn);
 		}

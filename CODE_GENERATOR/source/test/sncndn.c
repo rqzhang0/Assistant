@@ -6,7 +6,7 @@ void sncndn(double u, double k, double *sn, double *cn, double *dn)
 	//input parameters u, k^2
 	//return sn(u,k^2), cn(u,k^2), dn(u,k^2) 
 	const double Ea=1.0e-8;
-	double a,kt,ut,tmp;
+	double a,kt,ut,tmp,dn_tmp;
 	double em[14],en[14];
 	int i,j,n;
 
@@ -44,6 +44,7 @@ void sncndn(double u, double k, double *sn, double *cn, double *dn)
 		tmp=tmp;
 		//printf("a=%f tmp=%f\n",a,tmp);
 		for (j=n;j>=1;j--) {
+			dn_tmp=*dn;
 			if(j==n){
 			*dn=(en[j]+a*tmp*tmp)/(em[j]+a*tmp*tmp);
 			printf("j=%d tmp=%f\n",j,a*tmp*tmp);
@@ -54,17 +55,21 @@ void sncndn(double u, double k, double *sn, double *cn, double *dn)
 			//printf("%f\n",en[j]+tmp*tmp/em[j+1]);
 			//printf("%f\n",em[j]+tmp*tmp/em[j+1]);
 			}
-			if(j==1){
-				tmp=a*tmp;
-				printf("tmp=%f\n",a*tmp);
-			}else{
+			//if(j==1){
+			//	tmp=a*tmp;
+			//	printf("tmp=%f\n",a*tmp);
+			//}else
+			{
 			printf("j=%d tmp=%.20lf\n",j,a*tmp);
-			tmp*=(*dn);
+			tmp*=dn_tmp;
 			printf("j=%d tmp=%.20lf  dn=%.20lf\n",j,a*tmp,*dn);	
 			}	
 			
 		}
+		tmp=a*tmp;
+		printf("tmp=%f\n",tmp);
 		a=1.0/sqrt(tmp*tmp+1.0);
+		printf("a=%f\n",a);
 		if(*sn>=0.0){
 			*sn=a;
 		}else{
