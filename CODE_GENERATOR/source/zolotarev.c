@@ -11,14 +11,14 @@ double rf(double xn, double yn, double zn){
 	double Ln,RF,E2,E3;
 	while((Et<abs(Xn))||(Et<abs(Yn))||(Et<abs(Zn))){
 		Ln=sqrt(xn*yn)+sqrt(xn*zn)+sqrt(yn*zn);
-		xn=(xn+Ln)/4;
-		yn=(yn+Ln)/4;
-		zn=(zn+Ln)/4;	
+		xn=(xn+Ln)/4.0;
+		yn=(yn+Ln)/4.0;
+		zn=(zn+Ln)/4.0;	
 	}
 	
 	E2=Xn*Yn-Zn*Zn;
 	E3=Xn*Yn*Zn;
-	RF=(1-0.1*E2+(1.0/14.0)*E3+(1.0/24.0)*E2*E2-(3.0/44.0)*E2*E3)/sqrt(un);	
+	RF=(1.0-0.1*E2+(1.0/14.0)*E3+(1.0/24.0)*E2*E2-(3.0/44.0)*E2*E3)/sqrt(un);	
 	return RF;
 }
 

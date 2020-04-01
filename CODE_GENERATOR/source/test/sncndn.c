@@ -28,23 +28,39 @@ void sncndn(double u, double k, double *sn, double *cn, double *dn)
 		}
 		a=(en[i]+em[i])/2.0;
 		kt=en[i]*em[i];
+		//printf("em[i]-en[i]=%f\n",fabs(em[i]-en[i]));
+		//printf("a= %f kt=%f\n",a,kt);
+		printf("i=%d em=%f en=%f\n",i,em[i],en[i]);
 		
 	}
 	ut *= a;
 	*sn=sin(ut);
 	*cn=cos(ut);
+
+
+	//printf("sn=%f cn=%f\n",*sn,*cn);
 	if (*sn!=0) {
-		tmp=a*(*cn)/(*sn);
+		tmp=(*cn)/(*sn);
+		tmp=tmp;
+		//printf("a=%f tmp=%f\n",a,tmp);
 		for (j=n;j>=1;j--) {
 			if(j==n){
-			*dn=(en[j]+tmp)/(em[j]+tmp);
+			*dn=(en[j]+a*tmp*tmp)/(em[j]+a*tmp*tmp);
+			printf("j=%d tmp=%f\n",j,a*tmp*tmp);
 			}else{
-			*dn=(en[j]+tmp*tmp/em[j+1])/(em[j]+tmp*tmp/em[j+1]);
+			*dn=(en[j]+a*a*tmp*tmp/em[j+1])/(em[j]+a*a*tmp*tmp/em[j+1]);
+			printf("j=%d tmp=%f\n",j,a*a*tmp*tmp/em[j+1]);
+			//printf("dn = %f \n",*dn);
+			//printf("%f\n",en[j]+tmp*tmp/em[j+1]);
+			//printf("%f\n",em[j]+tmp*tmp/em[j+1]);
 			}
 			if(j==1){
-				tmp=tmp;
+				tmp=a*tmp;
+				printf("tmp=%f\n",a*tmp);
 			}else{
-			tmp*=*dn;
+			printf("j=%d tmp=%.20lf\n",j,a*tmp);
+			tmp*=(*dn);
+			printf("j=%d tmp=%.20lf  dn=%.20lf\n",j,a*tmp,*dn);	
 			}	
 			
 		}
