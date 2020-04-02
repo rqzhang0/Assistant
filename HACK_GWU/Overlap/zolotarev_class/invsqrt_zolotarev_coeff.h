@@ -19,6 +19,7 @@
 
 struct zolotarev_coef_pair
 {
+      double A;
       double q;
       double c;
 };
@@ -26,31 +27,37 @@ struct zolotarev_coef_pair
 class zolotarev_coef : public std::vector<zolotarev_coef_pair>
 {
 public:
+      double rf(double xn, double yn, double zn);
       double ellipticK(double rk);
       void sncndn(double u,double rk,double *sn,double *cn,double *dn);
       
+      double compute_delta(double lmin, double lmax, int n);
+	
       //Calculate the error with given polynomial order n in the range [lmin, lmax]
-      double compute_delta(double lmin, double lmax, int n)
+     /* double compute_delta(double lmin, double lmax, int n)
       {
         double delta;
            
         return delta;
       }
+      */
 
       //Calculate the polynomial order needed for given residual goal err
-      int get_order(double lmin, double lmax, double err)
+     /* int get_order(double lmin, double lmax, double err)
       {
         int n=1; 
         while(compute_delta(lmin, lmax, n) > err) n++;
         return n;
       }
+      */
 
       //Calculate the coefficients with given polynomial order n in the range [lmin, lmax]. 
       //  The overall factor should be included in q.
-      void compute_coef(double lmin, double lmax, int n)
+      /*void compute_coef(double lmin, double lmax, int n)
       {
          
       }
+      */
 
       //Calculate the sign function of y
       double sign(double y)
@@ -60,7 +67,7 @@ public:
 	return y*result;
       }
       
-      zolotarev_coef:zolotarev_coef(double lmin, double lmax, double err)
+      /*zolotarev_coef:zolotarev_coef(double lmin, double lmax, double err)
       {
         int size = get_order(lmin, lmax, err);
         resize(size);
@@ -78,5 +85,7 @@ public:
     	  print0("%20.15e %20.15e %20.15e\n",y,result,fabs(1.0-result));
         }
      }
+     */
+	void zolotarev_coef(double lmin, double lmax, double err);
 };
 
