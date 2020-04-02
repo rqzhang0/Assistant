@@ -1,6 +1,6 @@
 #include "invsqrt_zolotarev_coeff.h"
 
-zolotarev_coef::rf(double xn, double yn, double zn){
+double zolotarev_coef::rf(double xn, double yn, double zn){
   double un=(xn+yn+zn)/3.0;
   double Xn=1-xn/un;
   double Yn=1-yn/un;
@@ -26,7 +26,7 @@ zolotarev_coef::rf(double xn, double yn, double zn){
 
 }
 
-zolotarev_coef::ellipticK(double rk)
+double zolotarev_coef::ellipticK(double rk)
 {
    double k=rk/sqrt(1+rk*rk);
    if((k<0)||(k>=1)){
@@ -39,7 +39,7 @@ zolotarev_coef::ellipticK(double rk)
 
 }
 
-zolotarev_coef::sncndn(double u, double rk, double *sn, double *cn, double *dn)
+void zolotarev_coef::sncndn(double u, double rk, double *sn, double *cn, double *dn)
 {
 //input paramter u, rk
 //return sn(u,k^2), cn(u,k^2), dn(u,k^2)
@@ -100,12 +100,12 @@ zolotarev_coef::sncndn(double u, double rk, double *sn, double *cn, double *dn)
 
 }
 
-zolotarev::compute_delta(double lmin, double lmax, int n)
+double zolotarev_coef::compute_delta(double lmin, double lmax, int n)
 {
 	double eps=(lmin/lmax)*(lmin/lmax);
 	double k=sqrt(1.0-eps);
-	double k'=sqrt(1.0-k*k);
-	double rk=k/k';
+	double k_p=sqrt(eps);
+	double rk=k/k_p;
 	double v=ellipticK(rk)/(2.0*n+1);
 	double d=k;
 	double delta=1;
@@ -113,7 +113,7 @@ zolotarev::compute_delta(double lmin, double lmax, int n)
 	
 	for (r=1; r<=n; r++){
 		double sn,cn,dn;
-		sncndn((2*r-1.0),rk,sn,cn,dn);
+		sncndn((2*r-1.0)*v,rk,&sn,&cn,&dn);
 		double cr=sn*sn;
 		d*=k*cr*cr;
 	}
@@ -124,7 +124,22 @@ zolotarev::compute_delta(double lmin, double lmax, int n)
 
 }
 
-void zolotarev_coef::zolotarev_coef(double lmin, double lmax, double err)
+int zolotarev_coef::sign(double y, double *c, double *q, int n, double A)
+{
+	double result = 0;
+	int i = 0;
+
+	for(i=1; i<=n; i++){
+		result+=(q[i]/(y*y+c[i]));
+
+	}
+
+	printf("%20.15e %20.15e %20.15e\n",y,y*A*(1.0+result),fabs(1.0-fabs(y*A*(1.0+result))));
+
+	return 0;
+}
+
+void zolotarev_coef::compute_zolotarev_coef(double lmin, double lmax, double err)
 {
 	//Firstly, compute the polynomial order needed for given residual goal err
 	int n=1;
@@ -139,17 +154,17 @@ void zolotarev_coef::zolotarev_coef(double lmin, double lmax, double err)
 		printf("delta=%f err=%f\n",compute_delta(lmin,lmax,n),err);
 	}
 	
-	double *ar = malloc(sizeof(double)*2*n+1);//zolotarev coefficients ar
-	double *bn = malloc(sizeof(double)*n+1);//zolotarev coefficients bn
-	double *c = malloc(sizeof(double)*n+1);
-	double SN = malloc(sizeof(double)*2*n+1);//to store sn^2
+	double *ar=(double *) malloc(sizeof(double)*2*n+1);//zolotarev coefficients ar
+	double *bn =(double *) malloc(sizeof(double)*n+1);//zolotarev coefficients bn
+	double *c =(double *) malloc(sizeof(double)*n+1);
+	double *SN = (double *)malloc(sizeof(double)*2*n+1);//to store sn^2
 	double A = 0.0; //amplitude A	
 
-	struct zolotarev_coef_pair coeff[n+1];
+	//struct zolotarev_coef_pair coeff[n+1];
 	//Firstly, compute all the ars
 	double eps=(lmin/lmax)*(lmin/lmax);
 	double k = sqrt(1.0-eps);
-	double rk=k/sqrt(1.0-k*k);
+	double rk=k/sqrt(eps);
 	double v= ellipticK(rk)/(2.0*n+1);
 
 
@@ -157,18 +172,18 @@ void zolotarev_coef::zolotarev_coef(double lmin, double lmax, double err)
 	
 	for(r=1;r<=2*n; r++){
 		double sn, cn, dn;
-		sncndn(r*v,rk,sn,cn,dn);
+		sncndn(r*v,rk,&sn,&cn,&dn);
 		SN[r]=sn*sn;
-		ar[r]=cn*cn/(sn*sn);
+		ar[r]=(cn*cn)/(sn*sn);
 	}	
 	
 	//compute c;
 	for (r=1; r<=n; r++){
-		cc[r]=ar[2*r-1];
+		c[r]=ar[2*r-1];
 	}
 
 	//compute bn
-	for (i=1;r<=n;r++){
+	for (r=1;r<=n;r++){
 		int k;
 		bn[r]=0;
 		double tmp=1.0;
@@ -180,7 +195,7 @@ void zolotarev_coef::zolotarev_coef(double lmin, double lmax, double err)
 			}
 		}
 		
-		bn[r]=-1*tmp;
+		bn[r]=-1.0*tmp;
 	}
 
 	//compute A
@@ -191,9 +206,21 @@ void zolotarev_coef::zolotarev_coef(double lmin, double lmax, double err)
 		d*=k*cr*cr;
 	}
 
-	double A= 2/(1+sqrt(1-d*d));
+	 A= 2.0/(1.0+sqrt(1.0-d*d));
 	for(r=1;r<=n;r++){
-		A*=(SN[2*n-1]/SN[2*r]);
+		A*=(SN[2*r-1]/SN[2*r]);
+	}
+	
+	printf("A=%f\n",A);
+	for (r=1;r<=n;r++){
+		printf("c[%d]=%f  bn[%d]=%f \n",r,c[r],r,bn[r]);
+	}
+
+	// test sign function
+	double y;
+	for(y=-1.0; y<1.0; y=y+0.1)
+	{
+		sign(y,c,bn,n,A);
 	}
 
 	//copy data to struct 

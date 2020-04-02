@@ -24,8 +24,12 @@ struct zolotarev_coef_pair
       double c;
 };
 
-class zolotarev_coef : public std::vector<zolotarev_coef_pair>
+//class zolotarev_coef : public std::vector<zolotarev_coef_pair>
+class zolotarev_coef
 {
+private:
+	//double lmin;
+	//double lmax;
 public:
       double rf(double xn, double yn, double zn);
       double ellipticK(double rk);
@@ -60,12 +64,13 @@ public:
       */
 
       //Calculate the sign function of y
-      double sign(double y)
+     /* double sign(double y)
       {
 	for(i=0;i<size();i++)
 		result+=(data()[i].q/(y*y+data()[i].c));
 	return y*result;
       }
+      */
       
       /*zolotarev_coef:zolotarev_coef(double lmin, double lmax, double err)
       {
@@ -86,6 +91,7 @@ public:
         }
      }
      */
-	void zolotarev_coef(double lmin, double lmax, double err);
+       int sign(double y, double *c, double *q, int size, double A);
+	void compute_zolotarev_coef(double lmin, double lmax, double err);
 };
 
