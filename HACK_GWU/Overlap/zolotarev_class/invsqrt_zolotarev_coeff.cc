@@ -115,7 +115,7 @@ double zolotarev_coef::compute_delta(double lmin, double lmax, int n)
 		double sn,cn,dn;
 		sncndn((2*r-1.0)*v,rk,&sn,&cn,&dn);
 		double cr=sn*sn;
-		d*=k*cr*cr;
+		d*=k*k*cr*cr;
 	}
 
 	delta=d*d/((1.0+sqrt(1-d*d))*(1.0+sqrt(1-d*d)));
@@ -149,6 +149,8 @@ void zolotarev_coef::compute_zolotarev_coef(double lmin, double lmax, double err
 		n++;
 	}
 
+	printf("size=%d\n",n);
+
 	if(compute_delta(lmin,lmax,n)>err){
 		printf("zolotarev_ceoff ERROR: computed delta larger than err\n");
 		printf("delta=%f err=%f\n",compute_delta(lmin,lmax,n),err);
@@ -166,7 +168,8 @@ void zolotarev_coef::compute_zolotarev_coef(double lmin, double lmax, double err
 	double k = sqrt(1.0-eps);
 	double rk=k/sqrt(eps);
 	double v= ellipticK(rk)/(2.0*n+1);
-
+	
+	printf("v=%f\n",v);
 
 	int r;
 	
@@ -179,7 +182,7 @@ void zolotarev_coef::compute_zolotarev_coef(double lmin, double lmax, double err
 	
 	//compute c;
 	for (r=1; r<=n; r++){
-		c[r]=ar[2*r-1];
+		c[r]=ar[2*r];
 	}
 
 	//compute bn
@@ -189,31 +192,34 @@ void zolotarev_coef::compute_zolotarev_coef(double lmin, double lmax, double err
 		double tmp=1.0;
 		for(k=1;k<=n;k++){
 			if(r!= k){
-				tmp*=(ar[2*k]-ar[2*r-1])/(ar[2*k-1]-ar[2*r-1]);
+				tmp*=(ar[2*k-1]-ar[2*r])/(ar[2*k]-ar[2*r]);
 			}else{
-				tmp*=(ar[2*k]-ar[2*r-1]);
+				tmp*=(ar[2*k-1]-ar[2*r]);
 			}
 		}
 		
-		bn[r]=-1.0*tmp;
+		bn[r]=tmp;
 	}
 
 	//compute A
 	double d = k;
 	for(r=1;r<n+1;r++){
 		double sn,cn,dn;
-		double cr=SN[2*n-1];
-		d*=k*cr*cr;
+		double cr=SN[2*r-1];
+		printf("sn^2=%f\n",cr);
+		d*=k*k*cr*cr;
 	}
+	printf("d=%f\n",d);
 
 	 A= 2.0/(1.0+sqrt(1.0-d*d));
 	for(r=1;r<=n;r++){
 		A*=(SN[2*r-1]/SN[2*r]);
+		printf("r=%d A=%f\n",r,A);
 	}
 	
 	printf("A=%f\n",A);
 	for (r=1;r<=n;r++){
-		printf("c[%d]=%f  bn[%d]=%f \n",r,c[r],r,bn[r]);
+		printf("c[%d]=%f  bn[%d]=%f \n",r,sqrt(c[r]),r,bn[r]);
 	}
 
 	// test sign function
