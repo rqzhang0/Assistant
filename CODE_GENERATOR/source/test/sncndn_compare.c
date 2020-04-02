@@ -29,7 +29,6 @@ void sncndn(double uu, double emmc, double *sn, double *cn, double *dn)
 			emc *= a;
 			a=c;
 			//printf("%a= %f emc=%f\n",a,emc);
-			printf("i=%d em=%f en=%f \n",i,em[i],en[i]);
 		}
 		u *= c;
 		*sn=sin(u);
@@ -43,19 +42,13 @@ void sncndn(double uu, double emmc, double *sn, double *cn, double *dn)
 			for (ii=l;ii>=1;ii--) {
 				b=em[ii];
 				a *= c;
-				printf("j=%d c=%.20lf\n",ii,c);
 				c *= (*dn);
-				printf("ii=%d c=%.20lf dn=%.20lf\n",ii,c,*dn);
 				*dn=(en[ii]+a)/(b+a);
-				printf("dn = %f \n",*dn);
 				//printf("%f\n",en[ii]+a);
 				//printf("%f\n",b+a);
-				printf("j=%d a=%f \n",ii,a);
 				a=c/b;
 			}
-			printf("tmp=%f\n",c);
 			a=1.0/sqrt(c*c+1.0);
-			printf("a=%f\n",a);
 			*sn=(*sn >= 0.0 ? a : -a);
 			*cn=c*(*sn);
 		}

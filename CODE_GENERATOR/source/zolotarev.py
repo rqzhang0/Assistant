@@ -66,7 +66,7 @@ def FOR_END():
 	print "}"
 
 
-def DEFINE(ARG):
+def DEFINE_START(ARG):
 	# define a function ARG[0](ARG[1],ARG[2],ARG[3]...)	
 	for i in range(len(ARG)):
 		if(type(ARG)!=str):
@@ -75,5 +75,10 @@ def DEFINE(ARG):
 	print ARG[0]+"("
 	for i in range(len(ARG)-1):
 		print ARG[i+1]+";",
-
 	
+	print "){"
+
+
+def DEFINE_END():
+	print "}"
+
